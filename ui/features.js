@@ -21,12 +21,12 @@ function toUnderscoreCase(inputText) {
 }
 async function getFeatures(branchName) {
   if (!branchName) return;
-  const url = `https://api.github.com/repos/ONDC-Official/ONDC-LOG-Specifications/contents/api/docs?ref=${branchName}`;
+  const url = `https://api.github.com/repos/dineshk-wits/ONDC-LOG-Specifications/contents/api/docs?ref=${branchName}`;
 
   try {
     const response = await fetch(url, {
       headers: {
-        Authorization: "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",
+        Authorization: "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",
       },
     });
     const formattedResponse = await response?.json();
